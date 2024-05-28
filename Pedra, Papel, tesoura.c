@@ -10,6 +10,7 @@ void vencedor(int bot, int user);
 //Função main
 int main(void){
     int u, opcao = 0;
+    system("cls"); //Limpa tela
     srand(time(NULL)); //Define a aleatoriedade da função rand
 
     printf("\n\nBem-vindo ao jogo de Pedra, Papel, Tesoura!\n");
