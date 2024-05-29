@@ -57,7 +57,7 @@ int usuario(void){
 
 //Função que define o vencedor 
 void vencedor(int bot, int user){
-    int u, opcao = 0;
+    int u2, opcao2 = 0;
     srand(time(NULL));
 
     //Possíveis resultados
@@ -88,11 +88,11 @@ void vencedor(int bot, int user){
     if(bot == user){
         printf("\nOpa, parece que temos um empate! Vamos tentar novamente\n");
         
-        u = usuario();
+        u2 = usuario();
 
-        opcao = (rand() % 3);
+        opcao2 = (rand() % 3);
         printf("Escolha do computador: ");
-        escolha(opcao);
-        vencedor(opcao,u);
+        escolha(opcao2);
+        vencedor(opcao2,u2);
     }
 }
