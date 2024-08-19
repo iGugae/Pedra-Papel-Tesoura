@@ -19,6 +19,9 @@ def option (escolha):
 
 #Vez do Jogador
 jogador = int(input('Escolha sua jogada: '))
+while (jogador > 3 or jogador <=0):
+    print('ERRO! Opção inválida, tente novamente.')
+    jogador = int(input('Escolha sua jogada: '))
 option (jogador)
 
 print('\nAgora vamos ver o que o computador escolheu..')
